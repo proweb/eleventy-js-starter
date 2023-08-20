@@ -1,0 +1,14 @@
+{
+  "name": "eleventy-js-starter",
+  "version": "1.0.0",
+  "description": "Eleventy or @11ty is elegant, small and simple static generator.",
+  "keywords": [
+    "11ty",
+    "SSG"
+  ],
+  "author": "Sergey Mochalov",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

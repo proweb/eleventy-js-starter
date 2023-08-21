@@ -13,6 +13,7 @@
   "author": "Sergey Mochalov",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "html-minifier-terser": "^7.2.0"
   }
 }

@@ -1,0 +1,16 @@
+---
+title: Казанский федеральный университет
+permalink: "/"
+---
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At enim vero, blanditiis assumenda repudiandae corporis
+    mollitia aspernatur sint perferendis architecto eligendi natus. Dolor quo dolorum laborum accusamus! Labore,
+    velit. Minima?</p>
+
+    <hr>
+    
+{% for post in collections.all %}
+<p>
+    <a href="{{ post.url }}">{{ post.data.title }}</a> <i>(written {{ post.date | date: "%b %d, %Y"}})</i>
+</p>
+{% endfor %}

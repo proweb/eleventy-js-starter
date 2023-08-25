@@ -2,18 +2,7 @@
 const { minify } = require('html-minifier-terser');
 
 module.exports = function (eleventyConfig) {
-
-
-	// Transform example
-	// @url: https://www.11ty.dev/docs/config/#transforms
-  eleventyConfig.addTransform("logger", async function (content) {
-   
-    // Eleventy 2.0+ has full access to Eleventy’s `page` variable
-    console.log(`source file: ${this.page.inputPath}`);
-    console.log(`output file: ${this.page.outputPath}`);
-
-    return content; // no change done.
-  });
+ 
 
   // Transforms : Minify HTML Output
   eleventyConfig.addTransform("htmlmin", function(content) {

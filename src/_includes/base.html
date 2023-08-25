@@ -4,16 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>{% if title %}{{ title }}{% endif %}</title>
     <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <!-- View Transitions API -->
+    <meta name="view-transition" content="same-origin" />
 </head>
 
 <body>
     <header>
-        <h1>{{ title | safe }}</h1>
+        <h1>{{ site.name }}</h1>
+        <p>{{ site.description }}</p>
     </header>
-    {{ content | safe }}
+    <h1>{{ title }}</h1>
+    {{ content }}
+    <hr>
+    <a href="/">Go home</a>
 </body>
 
 </html>

@@ -1,8 +1,15 @@
 
 const { minify } = require('html-minifier-terser');
 
+/**
+ *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
+ */
+
 module.exports = function (eleventyConfig) {
- 
+  // Filters
+
+  // Shortcodes
+  eleventyConfig.addShortcode("year", () => new Date().getFullYear());
 
   // Transforms : Minify HTML Output
   eleventyConfig.addTransform("htmlmin", function(content) {
@@ -22,6 +29,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "src",
+      output: "dist"
     },
   };
 };

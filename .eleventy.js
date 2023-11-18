@@ -6,7 +6,8 @@ const { minify } = require('html-minifier-terser');
  */
 
 module.exports = function (eleventyConfig) {
-  // Filters
+
+  eleventyConfig.addPassthroughCopy({"public": "/"});
 
   // Shortcodes
   eleventyConfig.addShortcode("year", () => new Date().getFullYear());
@@ -31,5 +32,6 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "dist"
     },
+    prefix: "/"
   };
 };

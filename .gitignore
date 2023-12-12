@@ -1,5 +1,6 @@
-node_modules
-_site
 .vscode
 .idea
+node_modules
+_site
+dist
 package-lock.json

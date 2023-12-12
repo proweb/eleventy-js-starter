@@ -1,19 +1,15 @@
 
 const { minify } = require('html-minifier-terser');
 
+/**
+ *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
+ */
+
 module.exports = function (eleventyConfig) {
+  // Filters
 
-
-	// Transform example
-	// @url: https://www.11ty.dev/docs/config/#transforms
-  eleventyConfig.addTransform("logger", async function (content) {
-   
-    // Eleventy 2.0+ has full access to Eleventy’s `page` variable
-    console.log(`source file: ${this.page.inputPath}`);
-    console.log(`output file: ${this.page.outputPath}`);
-
-    return content; // no change done.
-  });
+  // Shortcodes
+  eleventyConfig.addShortcode("year", () => new Date().getFullYear());
 
   // Transforms : Minify HTML Output
   eleventyConfig.addTransform("htmlmin", function(content) {
@@ -33,6 +29,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "src",
+      output: "dist"
     },
   };
 };

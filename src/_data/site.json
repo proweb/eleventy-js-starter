@@ -1,5 +1,9 @@
 {
     "name": "@11ty/eleventy start",
     "description": "статический генератор сайтов на Node.js",
+    "author": {
+        "name": "Сергей Мочалов",
+        "url": "https://github.com/proweb"
+    },
     "lang": "ru"
 }

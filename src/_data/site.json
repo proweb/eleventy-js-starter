@@ -1,5 +1,5 @@
 {
-    "name": "Название сайта",
-    "description": "Описание сайта...",
+    "name": "@11ty/eleventy start",
+    "description": "статический генератор сайтов на Node.js",
     "lang": "ru"
 }

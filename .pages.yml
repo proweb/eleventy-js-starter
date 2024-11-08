@@ -1,0 +1,13 @@
+content:
+  - name: pages
+    label: Страницы
+    icon: book-open
+    path: src/pages
+    type: collection
+    fields:
+      - name: title
+        label: Заголовок
+        type: string
+      - name: content
+        label: Содержание
+        type: text

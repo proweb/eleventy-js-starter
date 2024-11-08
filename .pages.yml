@@ -4,10 +4,18 @@ content:
     icon: book-open
     path: src/pages
     type: collection
+    view:
+      fields: [ title, published, date ]
     fields:
+      - name: published
+        label: Published
+        type: boolean
       - name: title
         label: Заголовок
         type: string
+      - name: date
+        label: Дата
+        type: date
       - name: body
         label: Содержание
         type: rich-text

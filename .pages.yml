@@ -8,6 +8,6 @@ content:
       - name: title
         label: Заголовок
         type: string
-      - name: content
+      - name: body
         label: Содержание
-        type: text
+        type: rich-text

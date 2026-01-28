@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Test from Pagescms
 date: 2026-01-28
 ---

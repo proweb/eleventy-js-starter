@@ -1,4 +1,4 @@
 {
     "layout": "base",
-    "permalink": "/{{ page.slug | slugify }}/"
+    "permalink": "/{{ title | slugify }}/"
 }

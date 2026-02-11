@@ -2,6 +2,7 @@
 published: true
 title: Homepage
 date: 2026-01-01
+permalink: '/'
 ---
 Hello World! Вы на сайте созданном с помощью статического генератора сайтов 11ty
 

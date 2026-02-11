@@ -13,8 +13,11 @@ content:
       - name: title
         label: Заголовок
         type: string
+      - name: slug
+        label: URL
+        type: string
       - name: date
-        label: Дата
+        label: Дата создания
         type: date
       - name: body
         label: Содержание

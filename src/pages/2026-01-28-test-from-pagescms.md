@@ -1,7 +1,7 @@
 ---
 published: true
 title: Test from Pagescms
-permalink: my-test-permalink
+slug: test-slug-new
 date: 2026-01-28
 ---
 # Тест деплоя

@@ -1,4 +1,4 @@
 {
     "layout": "base",
-    "permalink": "/{{ (slug if slug else page.fileSlug) | slugify }}/"
+    "permalink": "/{{ slug || page.filePathStem }}/index.html"
 }

@@ -1,4 +1,4 @@
 {
     "layout": "base",
-    "permalink": "/{{ slug || page.filePathStem }}/index.html"
+    "permalink": "/{{ slug or page.filePathStem }}/index.html"
 }

@@ -13,7 +13,7 @@ content:
       - name: title
         label: Заголовок
         type: string
-      - name: permalink
+      - name: slug
         label: URL
         type: string
       - name: date
